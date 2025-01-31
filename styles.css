@@ -42,7 +42,7 @@ body{
 
 /* Website Footer */
 .footbar {
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(80px);
 
   text-align: center;
   
