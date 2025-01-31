@@ -42,7 +42,7 @@ body{
 
 /* Website Footer */
 .footbar {
-  backdrop-filter: blur(80px);
+  backdrop-filter: blur(20px);
 
   text-align: center;
   
@@ -54,7 +54,7 @@ body{
   margin-top: auto;
   margin-bottom: -8px;
   margin-left: -8px;
-  margin-right: -8px;
+  margin-right: -9px;
   
   width: auto;
 }
