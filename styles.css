@@ -34,7 +34,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 1200px;
+    min-height: 1000px;
     display: flex;
     flex-direction: column;
 }
@@ -63,4 +63,5 @@ body{
   color: white;
   font-family: "Segoe UI";
   width: auto;
+  font-size: 12px;
 }
