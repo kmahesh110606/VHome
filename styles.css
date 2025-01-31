@@ -46,10 +46,10 @@ body{
 
   text-align: center;
   
-  padding: 40px;
+  padding: 20px;
   position: relative;
   bottom: 0px;
-  z-index: 10;
+  z-index: 9;
 
   margin-top: auto;
   margin-bottom: -8px;
