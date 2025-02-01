@@ -124,13 +124,13 @@ body{
 
   &.moodle {
     &::before {
-      background-image: url("lms.png");
+      background-image: url("moodle.png");
     }
   }
 
   &.vtop {
     &::before {
-      background-image: url("vtop.png");
+      background-image: url("vit.png");
     }
   }
 
