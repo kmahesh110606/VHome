@@ -1,6 +1,6 @@
   /* Navigation bar */
 .navbar {
-    width: auto;  
+    width: 100%;  
     height: auto;
 
     margin-top: -9px;
@@ -54,12 +54,13 @@ body{
   bottom: 0px;
   z-index: 9;
 
+
   margin-top: auto;
   margin-bottom: -8px;
   margin-left: -8px;
   margin-right: -9px;
   
-  width: auto;
+  width: 100%;
 }
 
 .footbar-text {
@@ -101,9 +102,10 @@ body{
 
 .card {
   position: relative;
-  height: 200px;
-  min-width: 200px;
-  max-width: 240px;
+  min-height: 160px;
+  max-height: 280px;
+  min-width: 160px;
+  max-width: 280px;
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.25);
   overflow: hidden;
   margin: 10px;
@@ -178,7 +180,7 @@ body{
   .card-content {
       opacity: 1;
       background-color: rgba(11, 17, 66, 0.75);
-      backdrop-filter: blur(20px);
+      backdrop-filter: blur(40px);
     }
   }
 }
