@@ -1,4 +1,8 @@
-  /* Navigation bar */
+html {
+  overflow-z: hidden;
+}
+
+/* Navigation bar */
 .navbar {
     min-width: 100vw;  
     height: auto;
