@@ -80,7 +80,8 @@ body{
   align-items: center;
   padding: 10px;
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
+  spacing: 20px;
 }
 
 
