@@ -4,7 +4,7 @@
     width: auto;
     height: auto;
     margin-top: -4px;
-    margin-left: 0px;
+    margin-left: -2px;
     margin-right: -12px;
     background: transparent;
     backdrop-filter: blur(60px);
@@ -159,7 +159,7 @@ body{
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 1.5rem;
       align-items: center;
-      margin-bottom: 1rem;
+      margin-bottom: 0.92rem;
       font-weight: bold;
   }
 
@@ -168,6 +168,7 @@ body{
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
       font-weight: 200;
+      font-size: 0.68rem;
   }
 }
 
@@ -187,18 +188,32 @@ body{
 
 
 /* Responsiveness */
-@media (min-width: 280px) {
+@media (min-width: 510px) {
   .container { grid-template-columns: repeat(2, 1fr); }
-  .card { height: 160px; 
-         width: 160px; }
+  .card { height: 180px; 
+         width: 180px; }
+  .title { font-size: 1rem; }
+  p { font-size: 0.75rem; }
 }
 @media (min-width: 780px) {
   .container { grid-template-columns: repeat(3, 1fr); }
   .card { height: 220px; 
          width: 220px; }
+  .title { font-size: 1.3rem; }
+  p { font-size: 1rem; }
 }
 @media (min-width: 1180px) {
   .container { grid-template-columns: repeat(4, 1fr); }
   .card { height: 260px; 
          width: 260px; }
+  .title { font-size: 1.44rem; }
+  p { font-size: 1rem; }
+}
+
+@media (min-width: 1520px) {
+  .container { grid-template-columns: repeat(5, 1fr); }
+  .card { height: 260px; 
+         width: 260px; }
+  .title { font-size: 1.5rem; }
+  p { font-size: 1rem; }
 }
