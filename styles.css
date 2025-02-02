@@ -1,6 +1,6 @@
   /* Navigation bar */
 .navbar {
-    width: 100%;  
+    min-width: 100vh;  
     height: auto;
 
     margin: 0;
@@ -27,7 +27,7 @@
 body{
     /* Full height */
     height: 100%;
-    width: 100%;
+    max-width: 100vh;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@ body{
   margin-left: -8px;
   margin-right: -9px;
   
-  width: 100%;
+  width: 100vh;
 }
 
 .footbar-text {
@@ -83,6 +83,7 @@ body{
   row-gap: 16px;
   width: 100%;
   box-sizing: border-box;
+  flex: 1;
 }
 
 
