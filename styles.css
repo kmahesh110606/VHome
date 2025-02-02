@@ -3,7 +3,9 @@
     width: 100%;  
     height: auto;
 
-    margin: 0;
+    margin-top: -9px;
+    margin-left: -9px;
+    margin-right: -9px;
 
     background: transparent;
     backdrop-filter: blur(60px);
@@ -27,7 +29,7 @@
 body{
     /* Full height */
     height: 100%;
-    width: 100%;
+    width: auto;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +37,6 @@ body{
     min-height: max-content;
     display: flex;
     flex-direction: column;
-    margin: 0;
 }
 
 
@@ -77,12 +78,10 @@ body{
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding: 10px;
   display: grid;
-  gap: 10px;
-  row-gap: 16px;
-  width: 100%;
-  box-sizing: border-box;
+  gap: 1rem;
+  spacing: 20px;
 }
 
 
@@ -90,14 +89,13 @@ body{
 /* Card Layout */
 
 .card {
-  min-height: 160px;
-  min-width: 160px;
+  min-height: 200px;
+  min-width: 200px;
   position: relative;
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.25);
   overflow: hidden;
   margin: 10px;
   border-radius: 20px;
-  box-sizing: border-box;
   
   &::before {
       content: '';
@@ -158,21 +156,19 @@ body{
   color: #000;
   transition: background-color .25s ease, opacity .25s ease;
   opacity: 0;
-  border-radius: 20px;
 
   
   .title {
       color: white;
       margin-top: 20px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       align-items: center;
       margin-bottom: 1rem;
       font-weight: bold;
   }
 
   p {
-      font-size: 1rem;
       color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
@@ -187,7 +183,7 @@ body{
 
   .card-content {
       opacity: 1;
-      background-color: rgba(11, 17, 66, 0.8);
+      background-color: rgba(11, 17, 66, 0.75);
       backdrop-filter: blur(40px);
     }
   }
@@ -196,18 +192,18 @@ body{
 
 
 /* Responsiveness */
-@media (min-width: 360px) {
+@media (min-width: 280px) {
   .container { grid-template-columns: repeat(2, 1fr); }
   .card { height: 160px; 
          width: 160px; }
 }
-@media (min-width: 660px) {
+@media (min-width: 640px) {
   .container { grid-template-columns: repeat(3, 1fr); }
-  .card { height: 200px; 
-         width: 200px; }
-}
-@media (min-width: 1020px) {
-  .container { grid-template-columns: repeat(4, 1fr); }
   .card { height: 220px; 
-         width: 240px; }
+         width: 220px; }
+}
+@media (min-width: 920px) {
+  .container { grid-template-columns: repeat(4, 1fr); }
+  .card { height: 260px; 
+         width: 260px; }
 }
