@@ -1,9 +1,12 @@
-html {
-  overflow-x: hidden;  /* Ensure no horizontal scroll */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Prevent horizontal overflow */
 }
 
 /* Navigation bar */
 .navbar {
+    width: 100%; /* Ensure it fits the full width */
     height: auto;
     margin: 0;
     background: transparent;
@@ -13,8 +16,7 @@ html {
     z-index: 10;
     padding: 24px;
     border-radius: 4px;
-    width: 100%; /* Ensure it fits within the viewport width */
-    box-sizing: border-box;  /* Include padding in width calculation */
+    box-sizing: border-box;  /* Prevent overflow */
 }
 
 /* Page/Navbar Title */
@@ -36,7 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    overflow-x: hidden; 
+    box-sizing: border-box;
 }
 
 /* Website Footer */
@@ -45,13 +47,11 @@ body {
     text-align: center;
     padding: 40px;
     position: relative;
-    bottom: 0px;
+    bottom: 0;
     z-index: 9;
     margin-top: auto;
     margin-bottom: -8px;
-    margin-left: -8px;
-    margin-right: -9px;
-    width: calc(100vw - 16px); /* Adjust width to fit the screen */
+    width: 100%; /* Ensure it fits the screen */
     box-sizing: border-box;
 }
 
@@ -65,8 +65,6 @@ body {
 /* Body Container */
 .container {
     margin: 16px;
-    justify-content: space-between;
-    align-items: center;
     padding: 16px;
     display: grid;
     gap: 10px;
@@ -79,9 +77,9 @@ body {
 
 /* Card Layout */
 .card {
-    min-height: 200px;
+    height: 250px;
     width: 100%;
-    max-width: 300px; /* Max card width */
+    max-width: 250px; /* Ensure cards are not wider than this */
     position: relative;
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.25);
     overflow: hidden;
@@ -171,47 +169,43 @@ body {
 /* Responsiveness */
 @media (min-width: 360px) {
     .container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for small devices */
     }
     .card {
-        height: auto;
-        width: 100%;
-        max-width: 250px;
-    }
-    .title {
-        font-size: 1.25rem;
+        height: 240px; /* Slightly smaller height for smaller screens */
+        max-width: 240px; /* Adjust max-width for smaller cards */
     }
     .card-content p {
-        font-size: 0.9rem; /* Adjust text size on small screens */
+        font-size: 0.9rem; /* Adjust text size */
     }
 }
 
 @media (min-width: 660px) {
     .container {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium devices */
     }
     .card {
-        height: 240px;
-        max-width: 300px;
+        height: 250px; /* Standard card height */
+        max-width: 250px;
     }
 }
 
 @media (min-width: 1020px) {
     .container {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for larger devices */
     }
     .card {
-        height: 260px;
-        max-width: 300px;
+        height: 270px;
+        max-width: 270px; /* Slightly larger cards */
     }
 }
 
 @media (min-width: 1280px) {
     .container {
-        grid-template-columns: repeat(5, 1fr); /* 5 columns */
+        grid-template-columns: repeat(5, 1fr); /* 5 columns for very large screens */
     }
     .card {
         height: 280px;
-        max-width: 320px;
+        max-width: 280px;
     }
 }
