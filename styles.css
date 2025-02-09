@@ -105,37 +105,43 @@ body{
 
   &.moodle {
     &::before {
-      background-image: url("moodle.png");
+      background-image: url("Resources/moodle.png");
     }
   }
 
   &.vtop {
     &::before {
-      background-image: url("vit.png");
+      background-image: url("Resources/vit.png");
     }
   }
 
   &.colab {
     &::before {
-      background-image: url("colab.png");
+      background-image: url("Resources/colab.png");
     }
   }
 
   &.vitol {
     &::before {
-      background-image: url("moodle.png");
+      background-image: url("Resources/VITOL.png");
     }
   }
 
   &.ffcs {
     &::before {
-      background-image: url("vit.png");
+      background-image: url("Resources/Registrations.png");
     }
   }
 
   &.webcc {
     &::before {
-      background-image: url("vit.png");
+      background-image: url("Resources/Online Exam.png");
+    }
+  }
+
+  &.events {
+    &::before {
+      background-image: url("Resources/Events.png");
     }
   }
 
