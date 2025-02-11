@@ -195,10 +195,10 @@ body{
 
 /* Responsiveness */
 
-@media (min-width: 362px) {
+@media (min-width: 356px) {
   .container { grid-template-columns: repeat(2, 1fr); }
-  .card { height: 140px; 
-         width: 140px; }
+  .card { height: 152px; 
+         width: 152px; }
   .title { font-size: 1.7rem; }
   p { visibility: hidden; }
 }
