@@ -151,6 +151,12 @@ body{
     }
   }
 
+  &.vibrance {
+    &::before {
+      background-image: url("Resources/vibrance.png");
+    }
+  }
+
 
 .card-content {
   display: flex;
