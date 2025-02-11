@@ -195,7 +195,7 @@ body{
 
 /* Responsiveness */
 
-@media (min-width: 392px) {
+@media (min-width: 362px) {
   .container { grid-template-columns: repeat(2, 1fr); }
   .card { height: 140px; 
          width: 140px; }
