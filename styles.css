@@ -145,6 +145,12 @@ body{
     }
   }
 
+  &.gpa {
+    &::before {
+      background-image: url("Resources/GPA Calculator.png");
+    }
+  }
+
 
 .card-content {
   display: flex;
