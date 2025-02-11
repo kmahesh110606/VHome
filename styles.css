@@ -153,6 +153,7 @@ body{
 
   &.vibrance {
     &::before {
+      background-position-x: center;
       background-color: lightgreen;
       background-image: url("Resources/vibrance.png");
     }
