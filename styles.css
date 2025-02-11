@@ -243,7 +243,7 @@ body{
              padding: 12px;}
   .card { height: 260px; 
          width: 260px; }
-  .title { font-size: 2rem; }
-  p { font-size: 1.5rem; 
+  .title { font-size: 16px; }
+  p { font-size: 12px; 
       visibility: visible }
 }
