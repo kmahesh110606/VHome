@@ -1,85 +1,105 @@
 <html>
-  <head>
- <!--   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- -->   
+  <head> 
     <link href="styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      VHome CC
-    </title>
+    <title>VHome CC</title>
   </head>
-  <body background="Resources/background.jpg">
+  <body background="https://4kwallpapers.com/images/wallpapers/blue-abstract-blue-background-gradient-abstract-2560x1440-8985.jpg">
     <div class="navbar">
-      <div class="navbar-title">
-        VHome
+      <div class="navbar-title">VHome</div>
+    </div>
+
+    <center><div class="searchbar">
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+          <textarea class="searchbar-text" name="q" placeholder="Search or ask AI for anything..." onkeydown="handleKeyDown(event)"></textarea>
+          <div class="searchbar-buttons">
+            <button type="submit" class="googlebtn"></button>
+            <button type="button" class="bingbtn" onclick="window.open('https://www.bing.com/search?q=' + document.querySelector('.searchbar-text').value, '_blank')"></button>
+            <button type="button" class="gptbtn" onclick="window.open('https://chat.openai.com/?q=' + document.querySelector('.searchbar-text').value, '_blank')"></button>
+            <button type="button" class="copilotbtn" onclick="window.open('https://copilot.microsoft.com/search?q=' + document.querySelector('.searchbar-text').value + '&type=code', '_blank')"></button>
+            <button type="button" class="geminibtn" onclick="window.open('https://gemini.google.com/app')"></button>
+            <button type="button" class="perplexitybtn" onclick="window.open('https://www.perplexity.ai/search?q=' + document.querySelector('.searchbar-text').value, '_blank')"></button>
+           </div>
+        </form>
+      </div></center>
+
+    <div class="dashboardcontainer">  
+      <div class="column1">
+      <div class="quicklinks">
+        <div class="quicklink-item">
+          <div class="quicklink-item icon"></div>
+          <div class="quicklink-item text">Quick Links</div>
+        </div>
       </div>
     </div>
-    
-    <div class="container">
-
-      <div class="card vibrance" onclick="window.location='https://www.vitvibrance.com/';">
-          <div class="card-content">
-              <div class="title">Vibrance '25</div>
-          </div>
+    <div class="column2">
+    <div class="spotlight">
+        <div class="spotlight-header">
+          <div class="icon"></div>
+          <div class="spotlight-header-text">Spotlight</div>
+        </div>
+        <div class="spotlight-item"></div>
       </div>
-      
+    </div>
+    </div>
+    <div class="allappscontainer">
       <div class="card vtop" onclick="window.location='http://vtopcc.vit.ac.in';">
-          <div class="card-content">
-              <div class="title">VTOP</div>
-              <p>Academics, Hostels, Leave Requests, Grades and more...</p>
-          </div>
-      </div>
-      <div class="card moodle" onclick="window.location='https://lms.vit.ac.in/my/';">
-          <div class="card-content">
-              <div class="title">LMS</div>
-              <p>Assignment submissions and Quizzes (formerly Moodle)</p>
-          </div>
-      </div>
-      <div class="card vitol">
-          <div class="card-content" onclick="window.location='https://vitolcc1.vit.ac.in/login/index.php';">
-              <div class="title">VITOL Coursepage</div>
-              <p>Portal for accessing Quizzes and Materials for Non-Graded Courses</p>
-          </div>
-      </div>
-      <div class="card ffcs">
-          <div class="card-content" onclick="window.location='https://vtopregcc.vit.ac.in/RegistrationNew/';">
-              <div class="title">FFCS Registration</div>
-              <p>Select Timetables, Faculties and Courses</p>
-          </div>
+        <div class="card-content">
+          <div class="title">VTOP</div>
+          <p>Academics, Hostels, Leave Requests, Grades and more...</p>
+        </div>
       </div>
       <div class="card colab" onclick="window.location='https://vitcolab945.examly.io/login';">
-          <div class="card-content">
-              <div class="title">vitColab</div>
-              <p>Online Integrated Code Developement Environment (IDE) by iamneo (formerly examly)</p>
-          </div>
+        <div class="card-content">
+          <div class="title">vitColab</div>
+          <p>Online Integrated Code Development Environment (IDE) by iamneo (formerly examly)</p>
+        </div>
+      </div>
+      <div class="card vitol" onclick="window.location='https://vitolcc1.vit.ac.in/login/index.php';">
+        <div class="card-content">
+          <div class="title">VITOL Coursepage</div>
+          <p>Portal for accessing Quizzes and Materials for Non-Graded Courses</p>
+        </div>
+      </div>
+      <div class="card moodle" onclick="window.location='https://lms.vit.ac.in/my/';">
+        <div class="card-content">
+          <div class="title">LMS</div>
+          <p>Assignment submissions and Quizzes (formerly Moodle)</p>
+        </div>
+      </div>
+      <div class="card vhelp" onclick="window.location='https://vhelp.vit.ac.in/vitcc-help-center/';">
+        <div class="card-content">
+          <div class="title">VHelp '25</div>
+        </div>
+      </div>
+      <div class="card ffcs" onclick="window.location='https://vtopregcc.vit.ac.in/RegistrationNew/';">
+        <div class="card-content">
+          <div class="title">FFCS Registration</div>
+          <p>Select Timetables, Faculties and Courses</p>
+        </div>
       </div>
       <div class="card webcc">
-          <div class="card-content">
-              <div class="title">Online Exam Link</div>
-              <p>Softskills/EPT Exam Portal</p>
-          </div>
+        <div class="card-content">
+          <div class="title">Online Exam Link</div>
+          <p>Softskills/EPT Exam Portal</p>
+        </div>
       </div>
       <div class="card events" onclick="window.location='https://vitchennaievents.com/conf1/';">
-          <div class="card-content">
-              <div class="title">Events</div>
-              <p>Register for Events, Competitions and more...</p>
-          </div>
+        <div class="card-content">
+          <div class="title">Events</div>
+          <p>Register for Events, Competitions and more...</p>
+        </div>
       </div>
       <div class="card gpa">
-          <div class="card-content">
-              <div class="title">GPA Calculator</div>
-              <button onclick="window.location='https://cgpa-calculator.rajchandra.me/';">Link 1</button>
-              <button onclick="window.location='https://gradevitian.in/GPACalculator';">Link 2</button>
-          </div>
+        <div class="card-content">
+          <div class="title">GPA Calculator</div>
+          <button onclick="window.location='https://cgpa-calculator.rajchandra.me/';">Link 1</button>
+          <button onclick="window.location='https://gradevitian.in/GPACalculator';">Link 2</button>
+        </div>
       </div>
     </div>
-
-    
-<div class="footbar">
-      <div class="footbar-text">
-        Made by: Mahesh and Atharva
-      </div>
+    <div class="footbar">
+      <div class="footbar-text">Made by: Mahesh and Atharva</div>
       <br>
       <hr color="white" width="100%">
       <br>
@@ -89,6 +109,14 @@
         <br>
         vhome.co.in
       </div>
-  </div>
+    </div>
+    <script>
+      function handleKeyDown(event) {
+        if (event.key === 'Enter' && !event.shiftKey) {
+          event.preventDefault();
+          event.target.form.submit();
+        }
+      }
+    </script>
   </body>
 </html>
