@@ -4,44 +4,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VHome CC</title>
   </head>
-  <body background="https://4kwallpapers.com/images/wallpapers/blue-abstract-blue-background-gradient-abstract-2560x1440-8985.jpg">
+  <body background="https://preview.redd.it/windows-11-abstract-gradient-blue-bloom-1920x1080-v0-33j4ggnbp43b1.jpg?auto=webp&s=63a577346109f031606820896d5c01b70cc62fc6">
     <div class="navbar">
       <div class="navbar-title">VHome</div>
     </div>
 
-    <center><div class="searchbar">
-        <form action="https://www.google.com/search" method="GET" target="_blank">
-          <textarea class="searchbar-text" name="q" placeholder="Search or ask AI for anything..." onkeydown="handleKeyDown(event)"></textarea>
+    <center>
+      <div class="searchbar">
+        <form action="https://www.google.com/search" autocomplete="on" method="GET" target="_blank">
+          <div class="searchbar-container">
+            <textarea
+              class="searchbar-text"
+              autocomplete="on"
+              autofocus
+              name="q"
+              placeholder="Search or ask AI for anything..."
+              onkeydown="handleKeyDown(event)"
+              oninput="toggleClearButton(this)"
+            ></textarea>            
+            <div
+              class="clearbtn"
+              onclick="clearSearchBar()"
+              style="display: none;"
+            >
+              ✖
+          </div>
+          </div>
           <div class="searchbar-buttons">
             <button type="submit" class="googlebtn"></button>
-            <button type="button" class="bingbtn" onclick="window.open('https://www.bing.com/search?q=' + document.querySelector('.searchbar-text').value, '_blank')"></button>
-            <button type="button" class="gptbtn" onclick="window.open('https://chat.openai.com/?q=' + document.querySelector('.searchbar-text').value, '_blank')"></button>
-            <button type="button" class="copilotbtn" onclick="window.open('https://copilot.microsoft.com/search?q=' + document.querySelector('.searchbar-text').value + '&type=code', '_blank')"></button>
-            <button type="button" class="geminibtn" onclick="window.open('https://gemini.google.com/app')"></button>
-            <button type="button" class="perplexitybtn" onclick="window.open('https://www.perplexity.ai/search?q=' + document.querySelector('.searchbar-text').value, '_blank')"></button>
-           </div>
+            <button
+              type="button"
+              class="bingbtn"
+              onclick="window.open('https://www.bing.com/search?q=' + document.querySelector('.searchbar-text').value, '_blank')"
+            ></button>
+            <button
+              type="button"
+              class="gptbtn"
+              onclick="window.open('https://chat.openai.com/?q=' + document.querySelector('.searchbar-text').value, '_blank')"
+            ></button>
+            
+            <!--- The following buttons have been disabled due to compliance issues
+
+            <button
+              type="button"
+              class="copilotbtn"
+              onclick="window.open('https://copilot.microsoft.com/search?q=' + document.querySelector('.searchbar-text').value + '&type=code', '_blank')"
+            ></button>
+            <button
+              type="button"
+              class="geminibtn"
+              onclick="window.open('https://gemini.google.com/app')"
+            ></button>
+
+            --->
+
+            <button
+              type="button"
+              class="perplexitybtn"
+              onclick="window.open('https://www.perplexity.ai/search?q=' + document.querySelector('.searchbar-text').value, '_blank')"
+            ></button>
+
+            <button
+              type="button"
+              class="grokbtn"
+              onclick="window.open('https://www.grok.com/search?q=' + document.querySelector('.searchbar-text').value, '_blank')"
+            ></button>
+          </div>
         </form>
-      </div></center>
+      </div>
+    </center>
+    
+    <script>
+      function toggleClearButton(textarea) {
+        const clearButton = document.querySelector('.clearbtn');
+        if (textarea.value.trim() !== '') {
+          clearButton.style.display = 'inline';
+        } else {
+          clearButton.style.display = 'none';
+        }
+      }
+    
+      function clearSearchBar() {
+        const textarea = document.querySelector('.searchbar-text');
+        textarea.value = '';
+        toggleClearButton(textarea);
+        textarea.focus();
+      }
+    </script>
+
+    <br>
 
     <div class="dashboardcontainer">  
       <div class="column1">
       <div class="quicklinks">
-        <div class="quicklink-item">
-          <div class="quicklink-item icon"></div>
-          <div class="quicklink-item text">Quick Links</div>
+        <div class="header">
+          <div class="icon"></div>
+          <div class="quicklinks-header-text">Quick Links</div>
         </div>
+        <div class="quicklinkscontainer">
+        <div class="quicklink-item">
+          <div class="quicklink-item text">VITOL</div>
+          <div class="quicklink-item icon"></div>
+        </div>
+        <div class="quicklink-item">
+          <div class="quicklink-item text">Quick Link 1</div>
+          <div class="quicklink-item icon"></div>
+        </div>
+        <div class="quicklink-item">
+          <div class="quicklink-item text">Quick Link 1</div>
+          <div class="quicklink-item icon"></div>
+        </div>
+      </div>
       </div>
     </div>
     <div class="column2">
     <div class="spotlight">
-        <div class="spotlight-header">
+        <div class="header">
           <div class="icon"></div>
           <div class="spotlight-header-text">Spotlight</div>
         </div>
-        <div class="spotlight-item"></div>
+        
+        <div class="spotlight-item-bulletin">
+          <div class="spotlight-item-bulletin icon"></div>
+          <div class="spotlight-item-bulletin text">Spotlight</div>
+        </div>
+        <div class="spotlight-item-alert">
+          <div class="spotlight-item-alert icon"></div>
+          <div class="spotlight-item-alert text">Spotlight</div>
+        </div>
+        <div class="spotlight-item">
+          <div class="spotlight-item icon"></div>
+          <div class="spotlight-item text">Spotlight</div>
+        </div>
+        <div class="spotlight-item">
+          <div class="spotlight-item icon"></div>
+          <div class="spotlight-item text">Spotlight</div>
+        </div>
+        <div class="spotlight-item">
+          <div class="spotlight-item icon"></div>
+          <div class="spotlight-item text">Spotlight</div>
+        </div>
       </div>
     </div>
     </div>
+  
+    <center>
+    <div id="allapps" class="allappsheader" href="#allapps">
+      All Apps ▼
+    </div>
+    </center>
+
+
     <div class="allappscontainer">
       <div class="card vtop" onclick="window.location='http://vtopcc.vit.ac.in';">
         <div class="card-content">
@@ -74,11 +187,11 @@
       </div>
       <div class="card ffcs" onclick="window.location='https://vtopregcc.vit.ac.in/';">
         <div class="card-content">
-          <div class="title">FFCS Registration</div>
-          <p>Select Timetables, Faculties and Courses</p>
+          <div class="title">Registration</div>
+          <p>FFCS Course and Timetable Selection, Feedback, Hostel Registration.</p>
         </div>
       </div>
-      <div class="card webcc" onclick="window.location='https://webcc.vit.ac.in';">
+      <div class="card webcc">
         <div class="card-content">
           <div class="title">Online Exam Link</div>
           <p>Softskills/EPT Exam Portal</p>
@@ -99,15 +212,16 @@
       </div>
     </div>
     <div class="footbar">
-      <div class="footbar-text">Made by: Mahesh and Atharva</div>
       <br>
-      <hr color="white" width="100%">
       <br>
       <div class="footbar-text">
         © All rights reserved
         <br>
         <br>
         vhome.co.in
+        <br>
+        <br>
+        <br>
       </div>
     </div>
     <script>
@@ -117,6 +231,11 @@
           event.target.form.submit();
         }
       }
+      
+      document.querySelector('.allappsheader').addEventListener('click', function (e) {
+      e.preventDefault();
+      document.getElementById('allapps').scrollIntoView({ behavior: 'smooth' });
+      });
     </script>
   </body>
 </html>
