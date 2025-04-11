@@ -176,8 +176,9 @@ body {
   background-color: transparent;
   backdrop-filter: blur(32px);
   border-radius: 100%;
-  -webkit-border-radius: 100%
+  -webkit-border-radius: 100%;
   display: inline-block;
+  aspect-ratio: 1/1;
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -809,4 +810,3 @@ button {
       visibility: visible;
   }
 }
-
