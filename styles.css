@@ -207,37 +207,37 @@ body {
 }
 
 .googlebtn {
-  background-image: url("Resources/google.png");
+  background-image: url("Resources/Icons/google.png");
   background-size: cover;
 }
 
 .bingbtn {
-  background-image: url("Resources/bing.png");
+  background-image: url("Resources/Icons/bing.png");
   background-size: cover;
 }
 
 .gptbtn {
-  background-image: url("Resources/gpt.jpeg");
+  background-image: url("Resources/Icons/gpt.jpeg");
   background-size: cover;
 }
 
 .copilotbtn {
-  background-image: url("Resources/copilot.png");
+  background-image: url("Resources/Icons/copilot.png");
   background-size: cover;
 }
 
 .geminibtn {
-  background-image: url("Resources/gemini.png");
+  background-image: url("Resources/Icons/gemini.png");
   background-size: cover;
 }
 
 .perplexitybtn {
-  background-image: url("Resources/perplexity.png");
+  background-image: url("Resources/Icons/perplexity.png");
   background-size: cover;
 }
 
 .grokbtn {
-  background-image: url("Resources/grok.png");
+  background-image: url("Resources/Icons/grok.png");
   background-size: cover;
 }
 
@@ -503,7 +503,7 @@ iframe {
     background-size: cover;
     float: right;
     border-radius: 12px;
-    background-image: url("Resources/alert.png");
+    background-image: url("Resources/Icons/alert.png");
     background-size: cover;
     background-position: center;
   }
@@ -545,7 +545,7 @@ iframe {
     background-size: cover;
     float: right;
     border-radius: 12px;
-    background-image: url("Resources/bulletin.png");
+    background-image: url("Resources/Icons/bulletin.png");
     background-size: cover;
     background-position: center;
   }
@@ -664,41 +664,39 @@ iframe {
 }
 
 .card.moodle::before {
-  background-image: url("Resources/moodle.png");
+  background-image: url("Resources/Icons/moodle.jpg");
 }
 
 .card.vtop::before {
-  background-image: url("Resources/VTOP.png");
+  background-image: url("Resources/Icons/vtop.jpg");
 }
 
 .card.colab::before {
-  background-image: url("Resources/colab.png");
+  background-image: url("Resources/Icons/colab.jpg");
 }
 
 .card.vitol::before {
-  background-image: url("Resources/VITOL.png");
+  background-image: url("Resources/Icons/vitol.jpg");
 }
 
 .card.ffcs::before {
-  background-image: url("Resources/Registrations.png");
+  background-image: url("Resources/Icons/registrations.jpg");
 }
 
 .card.webcc::before {
-  background-image: url("Resources/Online Exam.png");
+  background-image: url("Resources/Online Exam.jpg");
 }
 
 .card.events::before {
-  background-image: url("Resources/Events.png");
+  background-image: url("Resources/Icons/events.jpg");
 }
 
 .card.gpa::before {
-  background-image: url("Resources/GPA Calculator.png");
+  background-image: url("Resources/Icons/gpa.jpg");
 }
 
 .card.vhelp::before {
-  background-position-x: center;
-  background-color: lightgreen;
-  background-image: url("Resources/vibrance.png");
+  background-image: url("Resources/Icons/vhelp.jpg");
 }
 
 .card-content {
