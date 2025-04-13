@@ -355,6 +355,7 @@ iframe {
   display: flex;
   gap: 8px;
   transition: 0.2s;
+  cursor: pointer;
 
   &.text {
     width: -webkit-fill-available;
@@ -485,6 +486,7 @@ iframe {
   display: flex;
   gap: 8px;
   transition: 0.2s;
+  cursor: pointer;
 
   &.text {
     backdrop-filter: none;
@@ -527,6 +529,7 @@ iframe {
   display: flex;
   gap: 8px;
   transition: 0.2s;
+  cursor: pointer;
 
   &.text {
     backdrop-filter: none;
@@ -569,6 +572,7 @@ iframe {
   display: flex;
   gap: 8px;
   transition: 0.2s;
+  cursor: pointer;
 
   &.text {
     backdrop-filter: none;
