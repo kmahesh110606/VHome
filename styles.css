@@ -373,14 +373,18 @@ iframe {
 
 
   &.icon {
-    min-width: 20px;
-    min-height: 20px;
-    max-width: 20px;
-    max-height: 20px;
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
     border-radius: 12px;
     margin: auto;
     background-size: cover;
     float: right;
+    float: right;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
   }
 
 }
@@ -406,6 +410,7 @@ iframe {
   &.icon {
     background-color: #9ec5ff44;
     box-shadow: none;
+    
   }
 
 }
@@ -503,7 +508,7 @@ iframe {
     background-size: cover;
     float: right;
     border-radius: 12px;
-    background-image: url("Resources/Icons/alert.png");
+    background-image: url("Resources/Icons/alert.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -545,7 +550,7 @@ iframe {
     background-size: cover;
     float: right;
     border-radius: 12px;
-    background-image: url("Resources/Icons/bulletin.png");
+    background-image: url("Resources/Icons/bulletin.jpg");
     background-size: cover;
     background-position: center;
   }
