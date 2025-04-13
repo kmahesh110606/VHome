@@ -607,7 +607,7 @@ body {
 }
 
 .card.colab::before {
-  background-image: url("Resources/Icons/colab.png");
+  background-image: url("Resources/Icons/colab.jpg");
 }
 
 .card.vitol::before {
