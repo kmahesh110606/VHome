@@ -438,7 +438,7 @@ body {
     background-size: cover;
     float: right;
     border-radius: 12px;
-    background-image: url("Resources/alert.png");
+    background-image: url("Resources/Icons/alert.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -480,7 +480,7 @@ body {
     background-size: cover;
     float: right;
     border-radius: 12px;
-    background-image: url("Resources/bulletin.png");
+    background-image: url("Resources/Icons/bulletin.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -607,7 +607,7 @@ body {
 }
 
 .card.colab::before {
-  background-image: url("Resources/colab.png");
+  background-image: url("Resources/Icons/colab.png");
 }
 
 .card.vitol::before {
