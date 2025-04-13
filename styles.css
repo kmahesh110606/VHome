@@ -42,6 +42,7 @@
   font-size: 18px;
   color: black;
   font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 8px;
   font-weight: bolder;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; 
@@ -239,6 +240,14 @@ body {
   background-image: url("Resources/grok.png");
   background-size: cover;
 }
+
+
+
+iframe {
+  border-radius: 20px;
+}
+
+
 
 
 
