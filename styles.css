@@ -468,7 +468,7 @@ iframe {
   align-items: center;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; 
-
+  height: -webkit-fill-available;
   /* Scroll */
   scrollbar-width: none;
   max-height: 320px;
