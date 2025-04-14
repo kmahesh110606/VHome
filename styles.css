@@ -920,7 +920,7 @@ button {
   body {
     color: white;
     background-color: #000;
-    background-image: url("https://th.bing.com/th/id/OIP.RHDYhskUx_qBwzKrSE-ziAHaEK?rs=1&pid=ImgDetMain");
+    background-image: url("Resources/Wallpapers/dark-mode.jpg");
   }
   .navbar, .footbar, .searchbar, .listcontainer, .quicklinks, .spotlight {
     background-color: rgba(32, 32, 32, 0.75);
