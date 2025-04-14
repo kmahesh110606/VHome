@@ -71,6 +71,7 @@ body {
   width: auto;
   /* Center and scale the image nicely */
   background-position: center;
+  background-image: url(background="Resources/Wallpapers/light-mode.jpg");
   -webkit-background-size: cover;
   background-attachment: fixed;
   overflow: visible;
